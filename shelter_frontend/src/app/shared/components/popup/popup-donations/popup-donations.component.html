@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="container-in mt-2 mb-3">
+    <h1 mat-dialog-title class="popup-title">Donations made:</h1>
+    <div mat-dialog-content class="popup-content">
+      <div *ngIf="data.donations && data.donations.length > 0; else noDonations">
+        <div *ngFor="let donation of data.donations">
+          <p>****************</p>
+          <p>Amount: {{ donation.amount }}</p>
+          <p>Cause: {{ donation.cause }}</p>
+          <p>Date: {{ donation.localDate }}</p>
+          <p>Description: {{ donation.description }}</p>
+        </div>
+      </div>
+      <ng-template #noDonations>
+        <p>There are no donations.</p>
+      </ng-template>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="closeDialog()" class="button">Close</button>
+    </div>
+  </div>
+</div>

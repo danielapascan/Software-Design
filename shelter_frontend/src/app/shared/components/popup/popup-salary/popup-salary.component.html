@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="container-in mt-2 mb-3">
+    <h1 mat-dialog-title class="popup-title">Give the raise:</h1>
+    <div mat-dialog-content class="popup-content">
+      <div class="form-group">
+        <label for="salary" style="margin-bottom:15px;">New salary:</label>
+        <div class="input-group">
+          <input class="input-label" [(ngModel)]="employeeData.salary" type="number" id="salary" name="salary" required>
+        </div>
+      </div>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onSubmit(employeeData)" class="button" style="margin-right:210px;">Submit</button>
+      <button mat-button (click)="closeDialog()" class="button" >Close</button>
+    </div>
+  </div>
+</div>

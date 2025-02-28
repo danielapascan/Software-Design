@@ -1,0 +1,46 @@
+.card{
+  background-color: #fbd5ab;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mb-3 input{
+  background-color: #feede2;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mb-3 label{
+  color: #411900;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+ }
+
+.title{
+  color: #411900;
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn{
+  background-color: #411900;
+  color: #feede2;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gif {
+  position: fixed;
+  bottom: 400px;
+  right: 400px;
+  width: 100px;
+  height: auto;
+  z-index: 9999;
+}

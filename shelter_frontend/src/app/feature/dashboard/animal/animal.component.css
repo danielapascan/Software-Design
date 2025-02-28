@@ -1,0 +1,21 @@
+.container {
+  margin-top: 50px;
+  color: #fedfc9;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card {
+  color: #411900;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.info {
+  background-color: #fedfc9;
+  border: none;
+}

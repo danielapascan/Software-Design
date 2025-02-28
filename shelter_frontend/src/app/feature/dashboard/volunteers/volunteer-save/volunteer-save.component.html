@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="volunteer-form">
+    <div class="volunteer-info">
+      <form >
+        <div class="form-group">
+          <h2 class="form-title">Please complete the following:</h2>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input [(ngModel)]="volunteerData.email" type="text" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input [(ngModel)]="volunteerData.password" type="password" id="password" name="password" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <label for="volunteeringStartingDate">Volunteering Starting Date:</label>
+            <input [(ngModel)]="volunteerData.volunteeringStartingDate" type="text" id="volunteeringStartingDate" name="volunteeringStartingDate" required>
+          </div>
+        </div>
+      </form>
+      <div>
+        <button (click)="onSubmit(volunteerData)" class="button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

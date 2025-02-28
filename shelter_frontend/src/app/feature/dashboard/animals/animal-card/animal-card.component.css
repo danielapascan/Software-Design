@@ -1,0 +1,28 @@
+.btn {
+  background-color: #c34d00;
+}
+
+.fa-paw {
+  color: #fedfc9;
+}
+
+.fa-address-card {
+  color: #491d00;
+}
+
+.fa-trash {
+  color: #fedfc9;
+}
+
+.fa-pencil {
+  color: #491d00;
+}
+
+.card {
+  color: #281000;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #fff2ea;
+}

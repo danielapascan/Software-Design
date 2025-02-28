@@ -1,0 +1,80 @@
+.popup-container-full-love {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../../assets/pictures/a50d31e829bc77d0dcef2b264c5abeba.jpg");
+  height: 300px;
+}
+
+.popup-container-empty-love {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../../assets/pictures/5b74d52f2e9981b09d6ce303a3e955e1.jpg");
+  height: 300px;
+}
+
+.popup-container-default {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../../assets/pictures/7bc698c804ed828b3fde711c8f0e46cc.jpg");
+  height: 300px;
+}
+
+.popup-container-yay {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../../assets/pictures/Imagine WhatsApp 2024-05-06 la 15.22.44_d33b39ad.jpg");
+  height: 300px;
+}
+
+.popup-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.popup-content {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #411900;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 100px;
+}

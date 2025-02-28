@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container-in mt-2 mb-3">
+    <h1 mat-dialog-title class="popup-title">Adoptions made:</h1>
+    <div mat-dialog-content class="popup-content">
+      <div *ngIf="data.adoptions && data.adoptions.length > 0; else noAdoptions">
+        <div *ngFor="let adoption of data.adoptions">
+          <p>****************</p>
+          <p>Date: {{ adoption.localDate }}</p>
+          <p>Animal Name: {{ adoption.animalEntity.name }}</p>
+          <p>Animal Age: {{ adoption.animalEntity.age }}</p>
+          <p>Animal Species: {{ adoption.animalEntity.species }}</p>
+          <p>Animal Breed: {{ adoption.animalEntity.breed }}</p>
+        </div>
+      </div>
+      <ng-template #noAdoptions>
+        <p>There are no adoptions.</p>
+      </ng-template>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="closeDialog()" class="button">Close</button>
+    </div>
+  </div>
+</div>

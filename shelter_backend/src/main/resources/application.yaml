@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: lab3
+  datasource:
+    url: jdbc:postgresql://localhost:8555/animalShelter
+    username: postgres
+    password: ACEGIF25
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+server:
+  servlet:
+    context-path: '/api'
+  port: 8556
+  error:
+    whitelabel:
+      enabled: false
+security:
+    secret-key: PS-SD-2024-3023X-1q2w3e4r5t6y7u8i9o0p
+    token-expiration-days: 15
+mail-sender-app:
+  url: http://localhost:8888/api/mail/v1/sync
+queues:
+  async-mail-sender-request: async-mail-sender-request

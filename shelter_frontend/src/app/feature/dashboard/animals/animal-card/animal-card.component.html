@@ -1,0 +1,28 @@
+<div class="card shadow-lg p-2 m-2">
+  <div class="d-flex flex-row">
+    <div class="m-2">
+      <i class="fa fa-animal fa-2x"></i>
+    </div>
+    <div class="d-flex flex-column me-auto">
+      <span class="fw-bold ">Name: {{ animal.name }}</span>
+      <span class="fw-bold ">Age: {{ animal.age }}</span>
+    </div>
+    <div>
+      <button *ngIf="loggedPerson.role !== 'ADMIN' && loggedPerson.role !== 'CUSTOMER'" (click)="updateAnimalNeedsPressed(animal.id)" class="btn" style="margin-right: 10px;">
+        <i class="fa fa-paw"></i>
+      </button>
+      <button (click)="viewDetails(animal.id)" class="btn" id ="btn-details" style="margin-right: 10px;">
+        <i class="fa fa-address-card"></i>
+      </button>
+      <button *ngIf="loggedPerson.role !== 'ADMIN' && loggedPerson.role !== 'CUSTOMER'" (click)="deleteAnimalPressed(animal.id)" class="btn" style="margin-right: 10px;">
+        <i class="fa fa-trash"></i>
+      </button>
+      <button *ngIf="loggedPerson.role !== 'ADMIN' && loggedPerson.role !== 'CUSTOMER'" (click)="updateAnimalPressed(animal)" class="btn" style="margin-right: 10px;">
+        <i class="fa fa-pencil"></i>
+      </button>
+      <button *ngIf="loggedPerson.role == 'CUSTOMER'" (click)="adoptAnimalPressed(animal.id)" class="btn" style="margin-right: 10px;">
+        Adopt Animal
+      </button>
+    </div>
+  </div>
+</div>

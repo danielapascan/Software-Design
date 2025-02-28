@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="customer-form">
+    <div class="customer-info">
+      <form >
+        <div class="form-group">
+          <h2 class="form-title">Please complete the following:</h2>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input [(ngModel)]="customerData.email" type="text" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input [(ngModel)]="customerData.password" type="password" id="password" name="password" required>
+          </div>
+        </div>
+      </form>
+      <div>
+        <button (click)="onSubmit(customerData)" class="button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

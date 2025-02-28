@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="donation-form">
+    <div class="donation-info">
+      <form >
+        <div class="form-group">
+          <h2 class="form-title">Please complete the following:</h2>
+          <div class="input-group">
+            <label for="amount">Amount:</label>
+            <input [(ngModel)]="donationData.amount" type="number" id="amount" name="amount" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <label for="cause">Cause:</label>
+            <input [(ngModel)]="donationData.cause" type="text" id="cause" name="cause" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <label for="localDate">Date:</label>
+            <input [(ngModel)]="donationData.localDate" type="text" id="localDate" name="localDate" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <label for="description">Description:</label>
+            <input [(ngModel)]="donationData.description" type="text" id="description" name="description" required>
+          </div>
+        </div>
+      </form>
+      <div>
+        <button (click)="onSubmit(donationData)" class="button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

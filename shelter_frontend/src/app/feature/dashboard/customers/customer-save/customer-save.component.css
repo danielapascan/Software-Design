@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.customer-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1 45%;
+  margin-right: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Caveat", cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.input-group input {
+  background-color: #fbd5ab;
+}
+
+.input-group label {
+  color: #411900;
+  font-weight: 0.9rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.form-title {
+  margin-top: 20px;
+  text-align: center;
+  color: #411900;
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.button {
+  margin-top: 20px;
+  align-self: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ffb07c;
+  color: #411900;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 20px;
+  border: none;
+}

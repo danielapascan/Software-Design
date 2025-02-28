@@ -1,0 +1,96 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  color: #281000;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #fff2ea;
+}
+
+.btn {
+  color: #fedfc9;
+  background-color: #281000;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.search {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff2ea;
+}
+
+.search-bar {
+  background-color: #bb4a00;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #fff2ea;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.page-link {
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.page-item {
+  margin-right: 5px;
+}
+
+.page-link {
+  color: #411900;
+  background-color: #fff2ea;
+  border: 1px solid #411900;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #ffcba9;
+  border-color: #ffcba9;
+  color: #fff2ea;
+}
+
+.page-item.disabled .page-link {
+  color: #aaa;
+  background-color: #eee;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+.page-item.active .page-link {
+  color: #fff2ea;
+  background-color: #ffa368;
+  border-color: #ffa368;
+}

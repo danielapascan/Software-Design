@@ -1,0 +1,117 @@
+<body>
+<div class="container">
+  <h1 class="title-color">Animal's needs</h1>
+  <div class="card shadow-lg p-2 mb-2 pink-background">
+    <div class="row ">
+      <div class="col-1">
+        <i class="fa-solid fa-heart fa-2x"></i>
+      </div>
+      <div class="col">
+        <div class="d-flex flex-column">
+          <span class="fw-bold love-title">Love:
+            <span class="love-detail">{{ animalNeeds?.love }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button class="btn " (click)="plusAnimalLove()" style="margin-right: 10px;">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn " (click)="minusAnimalLove()" style="margin-right: 10px;">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card shadow-lg p-2 mb-2 pink-background">
+    <div class="row">
+      <div class="col-1">
+        <i class="fa-solid fa-shower fa-2x"></i>
+      </div>
+      <div class="col">
+        <div class="d-flex flex-column">
+          <span class="fw-bold love-title">CleanAnimal:
+            <span class="love-detail">{{ animalNeeds?.cleanAnimal }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button class="btn " (click)="plusCleanAnimal()" style="margin-right: 10px;">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn " (click)="minusCleanAnimal()" style="margin-right: 10px;">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card shadow-lg p-2 mb-2 pink-background">
+    <div class="row">
+      <div class="col-1">
+        <i class="fa-solid fa-house fa-2x"></i>
+      </div>
+      <div class="col">
+        <div class="d-flex flex-column">
+          <span class="fw-bold love-title">CleanCage:
+            <span class="love-detail">{{ animalNeeds?.cleanCage }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button class="btn " (click)="plusCleanCage()" style="margin-right: 10px;">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn " (click)="minusCleanCage()" style="margin-right: 10px;">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card shadow-lg p-2 mb-2 pink-background">
+    <div class="row">
+      <div class="col-1">
+        <i class="fa-solid fa-dog fa-2x"></i>
+      </div>
+      <div class="col">
+        <div class="d-flex flex-column">
+          <span class="fw-bold love-title">Walk:
+             <span class="love-detail">{{ animalNeeds?.walk }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button class="btn " (click)="plusWalk()" style="margin-right: 10px;">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn " (click)="minusWalk()" style="margin-right: 10px;">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card shadow-lg p-2 mb-2 pink-background">
+    <div class="row">
+      <div class="col-1">
+        <i class="fa-solid fa-carrot fa-2x"></i>
+      </div>
+      <div class="col">
+        <div class="d-flex flex-column">
+          <span class="fw-bold love-title">Food:
+            <span class="love-detail">{{ animalNeeds?.food }}</span>
+          </span>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button class="btn " (click)="plusFood()" style="margin-right: 10px;">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn " (click)="minusFood()" style="margin-right: 10px;">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="../../../../assets/pictures/tumblr_m9wlrk0iWz1rfjowdo1_500.gif" class="gif"
+     alt="GIF">
+</body>

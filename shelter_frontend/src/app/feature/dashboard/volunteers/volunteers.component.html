@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="mt-3 mb-3 d-flex flex-row">
+    <h5 class="search">Sorted by: </h5>
+    <input [(ngModel)]="sortBy" class="form-control search-bar" type="string">
+    <button (click)="getVolunteers()" class="btn " style="margin-right: 10px; margin-left: 10px;">
+      <i class="fa fa-magnifying-glass"></i>
+    </button>
+  </div>
+  <div *ngIf="volunteers && volunteers.length">
+    <div *ngFor="let volunteer of volunteers">
+      <div class="card shadow-lg p-2 m-2">
+        <div class="card-body ">
+          <h5 class="card-title">Email: {{ volunteer.email }}</h5>
+          <p class="card-text">Role: {{ volunteer.role }}</p>
+          <p class="card-text">Volunteering Starting Date: {{ volunteer.volunteeringStartingDate }}</p>
+          <button class="btn " (click)="deleteVolunteer(volunteer.id)" style="margin-right: 10px;">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn" (click)="addVolunteer()" style="margin-bottom: 10px;">Add Volunteer</button>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item" [class.disabled]="currentPage === 0">
+        <a class="page-link" (click)="loadPage(currentPage - 1)">Previous</a>
+      </li>
+      <li class="page-item" *ngFor="let page of totalPagesArray" [class.active]="page === currentPage">
+        <a class="page-link" (click)="loadPage(page)">{{ page + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages - 1">
+        <a class="page-link" (click)="loadPage(currentPage + 1)">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>

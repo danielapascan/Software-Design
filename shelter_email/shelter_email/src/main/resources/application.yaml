@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: shelter_email
+  mail:
+    host: smtp.mailtrap.io
+    port: 587
+    username: 6e2d16ff163bf0
+    password: 91a5ad5b17acf8
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+server:
+  port: 8888
+  servlet:
+    context-path: '/api'
+  error:
+    whitelabel:
+      enabled: false
+queues:
+  async-mail-sender-request: async-mail-sender-request

@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="dropdown">
+    <button *ngIf="loggedPerson.role == 'ADMIN' || loggedPerson.role =='EMPLOYEE'" class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a *ngIf="loggedPerson.role == 'ADMIN'" (click)="goToEmployees()" id="employee-button">Employees</a>
+      <a (click)="goToVolunteers()">Volunteers</a>
+      <a (click)="goToCustomers()">Customers</a>
+      <a (click)="goToDonations()">Donations</a>
+      <a (click)="goToAdoptions()">Adoptions</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button *ngIf="loggedPerson.role == 'CUSTOMER'" class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a (click)="makeDonation()">Donate</a>
+      <a (click)="seeAdoptions(loggedPerson.id)">Adoptions Made</a>
+      <a (click)="seeDonations(loggedPerson.id)">Donations Made</a>
+    </div>
+  </div>
+  <div class="mt-2 mb-3 d-flex flex-row">
+    <input [(ngModel)]="searchBy" class="form-control search-bar" type="string">
+    <button (click)="getAnimalsBySpecies()" class="btn " style="margin-right: 10px; margin-left: 10px;">
+      <i class="fa fa-magnifying-glass"></i>
+    </button>
+    <button (click)="logOut()" class="btn " id="logout-button" style="margin-right: 10px;">
+      <i class="fa fa-right-from-bracket"></i>
+    </button>
+  </div>
+  <div class="p-2">
+    @for (animal of animals; track animal.id) {
+      <app-animal-card [animal]="animal"
+                       (deleteAnimal)="deleteAnimalCalled($event)"
+                       (updateAnimal)="updateAnimalCalled($event)"
+                       (updateAnimalNeeds)="updateAnimalNeedsCalled($event)"
+                       (details)="viewDetails($event)"></app-animal-card>
+    } @empty {
+      <p id="empty-animals">No animal</p>
+    }
+  </div>
+  <div>
+    <button *ngIf="loggedPerson.role != 'ADMIN'" (click)="addAnimal()" id="animal-button" class="btn "
+            style="margin-right: 10px; margin-left: 10px; margin-bottom: 10px;">
+      <i class="fa-solid fa-upload"></i>
+    </button>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item" [class.disabled]="currentPage === 0">
+        <a class="page-link" (click)="loadPage(currentPage - 1)" id="previous">Previous</a>
+      </li>
+      <li class="page-item" *ngFor="let page of totalPagesArray" [class.active]="page === currentPage">
+        <a class="page-link" (click)="loadPage(page)">{{ page + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages - 1">
+        <a class="page-link" (click)="loadPage(currentPage + 1)">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
